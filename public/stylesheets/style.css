@@ -1,16 +1,79 @@
-body {
+body, html {
+  text-align: center;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 a {
   color: #00B7FF;
 }
 
-#index {
+/* Main Page*/
+h4 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/cinema.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  #myBtn {
+    background-color: whitesmoke;
+  }
+
+  /*#main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }*/
+
+/*#index {
   background-image: url("../images/cinema.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}*/
+
+/* Movies Page*/
+.container {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+  padding: 20px;
 }
+
+.card {
+  display: flex;
+  justify-content: column;
+  align-content: space-around;
+  padding: 20px;
+  border: none;
+}
+
+.btn btn-primary {
+  size: 50%;
+}
+
+.card-title {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#main-title {
+  position: absolute;
+}
+

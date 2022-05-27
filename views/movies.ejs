@@ -1,10 +1,14 @@
-Hi!
+<h4>Ironhack Cinema</h4>
+<p>Click on the movie to check the showtimes!</p>
 
-
-<% movies.forEach((movie) => { %>
-    <div style="border-width:2px; border-style:solid; border-color:black; margin: 10px; padding: 10px">
-        <img src="<%- movie.image%>" alt="" style="width: 50px">
-        <h3><%- movie.title %></h6>
-            <a href="<%- movie._id%>">see more</a>
+<div class="container">
+  <% movies.forEach((movie) => { %>
+  <div class="card" style="width: 14rem">
+    <div class="card-body">
+      <img src="<%- movie.image%>" class="card-img-top" alt="movie poster" />
+      <h5 class="card-title"><%- movie.title %></h5>
+      <a href="<%- movie._id%>" class="btn btn-primary">See more</a>
     </div>
-    <% }) %>
+  </div>
+  <% }) %>
+</div>
